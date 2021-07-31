@@ -8,7 +8,7 @@ RUN apk add python3 py3-pip
 
 RUN pip3 install robotframework
 
-COPY bin/run-robot.sh /opt/robotframework/bin/
+COPY run-robot.sh /opt/robotframework/bin/
 RUN chmod -R +x /opt/robotframework/bin/
 
 ENV PATH=/opt/robotframework/bin:$PATH
